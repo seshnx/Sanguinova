@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(if exist JuceLibraryCode rmdir /s /q JuceLibraryCode)",
+      "Bash(if exist Builds rmdir /s /q Builds)",
+      "Bash(if exist Sanguinova.jucer del Sanguinova.jucer)",
+      "Bash(if exist build.ps1 del build.ps1)",
+      "Bash(dir)",
+      "Bash(cmd //c build_windows.bat)",
+      "Bash(cmd.exe /c \"cd /d \"\"C:\\\\Users\\\\ricar\\\\Documents\\\\Amalia Media LLC\\\\Plugins\\\\Sanguinova\"\" && build_windows.bat\")",
+      "Bash(\"/c/Program Files/CMake/bin/cmake.exe\" --build build --config Release --target Sanguinova_VST3)",
+      "Bash(\"/c/Program Files/CMake/bin/cmake.exe\" --build build --config Release --target Sanguinova_Standalone)",
+      "Bash(\"C:/Program Files/CMake/bin/cmake.exe\" --build:*)",
+      "Bash(\"C:/Program Files/CMake/bin/cmake.exe\" --build \"C:/Users/ricar/Documents/Amalia Media LLC/Plugins/Sanguinova/build\" --config Release --target Sanguinova_VST3)",
+      "Bash(\"C:/Program Files/CMake/bin/cmake.exe\" -B build -G \"Visual Studio 17 2022\" -A x64)",
+      "Bash(\"C:/Program Files/CMake/bin/cmake.exe\" --help)"
+    ]
+  }
+}
