@@ -56,6 +56,11 @@ juce_add_binary_data(SanguinovaData
         Resources/company_logo.png
 )
 
+# Set PIC flag for binary data (required for shared libraries on Linux)
+set_target_properties(SanguinovaData PROPERTIES
+    POSITION_INDEPENDENT_CODE TRUE
+)
+
 # Add sources
 target_sources(Sanguinova
     PRIVATE
