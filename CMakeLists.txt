@@ -53,7 +53,7 @@ juce_add_plugin(Sanguinova
 # Add binary resources (logo)
 juce_add_binary_data(SanguinovaData
     SOURCES
-        resources/company_logo.png
+        Resources/company_logo.png
 )
 
 # Add sources
